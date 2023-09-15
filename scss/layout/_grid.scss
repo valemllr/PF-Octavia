@@ -8,11 +8,11 @@ section {
     grid-template-rows: 1000px 700px;
     grid-gap: 20px;
     .item-uno {
-        background-image: url(../../img/grid-one.jpg);
+        background-image: url(../../img/grid-index/grid-one.jpg);
         background-size: cover;
     }
     .item-dos {
-        background-image: url(../../img/grid-two.jpg);
+        background-image: url(../../img/grid-index/grid-two.jpg);
         background-size: cover;
         p {
             font-family: $fuente-principal;
@@ -25,7 +25,7 @@ section {
         }
     }
     .item-tres {
-        background-image: url(../../img/grid-three.jpg);
+        background-image: url(../../img/grid-index/grid-three.jpg);
         background-size: cover;
         grid-column: 1/3;
         p{

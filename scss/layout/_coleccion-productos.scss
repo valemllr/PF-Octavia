@@ -1,0 +1,47 @@
+@import '../utilities/variables';
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 25px;
+    .item {
+        border-radius: 10px;
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+        }
+        figure {
+            overflow: hidden;
+            .item-img {
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        .info-product {
+            padding: 15px 30px;
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                font-family: 'DM Serif Display', serif;
+                text-align: center;
+            }
+            .price {
+                font-family: 'DM Serif Display', serif;
+            }
+            button {
+                border: none;
+                background: none;
+                color: white;
+                background-color: black;
+                font-family: $fuente-principal;
+            }
+        }
+        }
+    }
+}
