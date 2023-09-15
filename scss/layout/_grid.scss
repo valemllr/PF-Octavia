@@ -10,12 +10,6 @@ section {
     .item-uno {
         background-image: url(../../img/grid-one.jpg);
         background-size: cover;
-        p {
-            font-family: $fuente-principal;
-            font-size: 50px;
-            text-align: center;
-            color: white;
-        }
     }
     .item-dos {
         background-image: url(../../img/grid-two.jpg);
@@ -24,7 +18,10 @@ section {
             font-family: $fuente-principal;
             font-size: 50px;
             text-align: center;
-            color: #d5bdaf;
+            background: #ccc;
+            background: linear-gradient(to right, #020024, #79096d, #e0779d);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
         }
     }
     .item-tres {
@@ -35,7 +32,10 @@ section {
             font-family: $fuente-principal;
             font-size: 50px;
             text-align: center;
-            color: #780000;
+            background: #ccc;
+            background: linear-gradient(to right, #2a0000, #d10303, #f67a7a);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
         }
     }
 }

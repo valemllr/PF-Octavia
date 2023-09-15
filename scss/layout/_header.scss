@@ -13,11 +13,11 @@ header {
         font-family: $fuente-principal;
         font-size: 13px;
         margin-top: 10px;
-        z-index: 1;
         .nav {
             li {
                 text-decoration: none;
                 list-style-type: none;
+                float: left;
                 &:hover > ul {
                     display: block;
                 }
