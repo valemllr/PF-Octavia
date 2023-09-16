@@ -1,0 +1,16 @@
+@import '../utilities/variables';
+.container-items {
+    .item {
+        .info-product {
+            button {
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                font-family: $fuente-principal;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}

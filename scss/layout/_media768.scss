@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    header {
+        img {
+            width: 250px;
+            height: 100px;
+            margin: auto;
+        }
+        .compras {
+            display: none;
+        }
+    }
+
+    //coleccion 
+
+    .container-items {
+        display: grid;
+        gap: 20px;
+        margin: 25px;
+        grid-template-columns: 1fr;
+        .item {
+            .info-product {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    //grids
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+       .item-uno {
+            background-image: none;
+       } 
+       .item-dos {
+            background-image: none;
+            margin: auto;
+       }
+       .item-tres {
+            background-image: none;
+       }
+    }
+}    

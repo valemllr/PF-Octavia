@@ -6,6 +6,8 @@
     <title>OCTAVIA</title>
     <!-- link de CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link de tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,19 +36,28 @@
     </div>
 
 
-    <section>
-        <div class="item-uno"></div>
-        <div class="item-dos">
+    <section class="grid-container">
+        <div data-aos="fade-right" class="item-uno"></div>
+        <div data-aos="fade-left" class="item-dos">
             <p>SHOP NEW ARRIVALS</p>
         </div>
-        <div class="item-tres">
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="item-tres">
             <p>SHOP THE LOOK</p>
         </div>
     </section>
 
     <footer>
         <P>Seguinos en nuestras redes!</P>
-        <img src="img/icons/icons-fb.png" alt="icons-facebook"><img src="img/icons/icons-ig.png" alt="icons-instagram"><img src="img/icons/icons-tw.png" alt="icons-twitter"><img src="img/icons/icons-lkn.png" alt="icons-linkedin">
+        <div class="medias">
+            <img src="img/icons/icons-fb.png" alt="icons-facebook"><img src="img/icons/icons-ig.png" alt="icons-instagram"><img src="img/icons/icons-tw.png" alt="icons-twitter"><img src="img/icons/icons-lkn.png" alt="icons-linkedin">
+        </div>
     </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+    AOS.init();
+  </script>   
 </body>
 </html>

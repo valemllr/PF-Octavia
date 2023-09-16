@@ -6,13 +6,16 @@ header {
     align-items: center;
     flex-wrap: wrap;
     img {
-        width: 120px;
-        height: 45px;
+        width: 250px;
+        height: 100px;
+        margin-top: 10px;
+        margin-right: 100px;
     }
     nav {
         font-family: $fuente-principal;
         font-size: 13px;
         margin-top: 10px;
+        padding-top: 20px;
         .nav {
             li {
                 text-decoration: none;
@@ -43,8 +46,9 @@ header {
         }
     }
     .compras {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
+        margin-top: 20px;
         cursor: pointer;
     }
 }

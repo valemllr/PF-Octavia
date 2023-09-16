@@ -6,13 +6,16 @@ header {
   flex-wrap: wrap;
 }
 header img {
-  width: 120px;
-  height: 45px;
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+  margin-right: 100px;
 }
 header nav {
   font-family: "DM Serif Display", serif;
   font-size: 13px;
   margin-top: 10px;
+  padding-top: 20px;
 }
 header nav .nav li {
   text-decoration: none;
@@ -41,8 +44,9 @@ header nav .nav li a:hover {
   background-color: white;
 }
 header .compras {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -114,11 +118,18 @@ section .item-tres p {
 }
 
 footer p {
+  border-top: 1px solid black;
   font-family: "DM Serif Display", serif;
   font-size: 15px;
+  margin-top: 10px;
+  padding: 15px;
   text-align: center;
 }
-footer p img {
+footer .medias {
+  display: flex;
+  justify-content: center;
+}
+footer .medias img {
   width: 25px;
   height: 25px;
 }
@@ -126,7 +137,7 @@ footer p img {
 .container-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
   margin: 25px;
 }
 .container-items .item {
@@ -154,6 +165,7 @@ footer p img {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 .container-items .item figure .info-product p {
   font-family: "DM Serif Display", serif;
@@ -162,12 +174,49 @@ footer p img {
 .container-items .item figure .info-product .price {
   font-family: "DM Serif Display", serif;
 }
-.container-items .item figure .info-product button {
-  border: none;
-  background: none;
-  color: white;
+
+.container-items .item .info-product button {
   background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
   font-family: "DM Serif Display", serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 250px;
+    height: 100px;
+    margin: auto;
+  }
+  header .compras {
+    display: none;
+  }
+  .container-items {
+    display: grid;
+    gap: 20px;
+    margin: 25px;
+    grid-template-columns: 1fr;
+  }
+  .container-items .item .info-product p {
+    text-align: center;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid-container .item-uno {
+    background-image: none;
+  }
+  .grid-container .item-dos {
+    background-image: none;
+    margin: auto;
+  }
+  .grid-container .item-tres {
+    background-image: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
