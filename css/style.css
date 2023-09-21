@@ -176,6 +176,8 @@ footer .medias img {
 }
 
 .container-items .item .info-product button {
+  display: block;
+  margin: auto;
   background-color: black;
   color: white;
   border: none;
